@@ -1,6 +1,6 @@
-# 🚀 LLMOps with MLflow
+# LLMOps with MLflow
 
-> یادگیری عملی LLMOps با استفاده از MLflow برای tracking، evaluation و deployment مدل‌های زبانی
+> A hands-on learning repository for LLMOps using MLflow for tracking, evaluation, and deployment of language models.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
 [![MLflow](https://img.shields.io/badge/MLflow-2.x-orange.svg)](https://mlflow.org)
@@ -8,22 +8,23 @@
 
 ---
 
-## 🎯 هدف این ریپازیتوری
+## Goal
 
-این ریپازیتوری مسیر یادگیری **LLMOps Engineer** رو به‌صورت عملی پوشش می‌ده:
-- ثبت و tracking آزمایش‌های LLM با MLflow
-- مقایسه promptها، مدل‌ها و پارامترها
-- evaluation خودکار خروجی‌های LLM
-- مدیریت چرخه حیات مدل (Model Registry)
-- آماده‌سازی برای production
+This repository covers the practical learning path for becoming an **LLMOps Engineer**:
+
+- Tracking LLM experiments with MLflow
+- Comparing prompts, models, and parameters
+- Automated evaluation of LLM outputs
+- Managing the model lifecycle with Model Registry
+- Preparing models for production
 
 ---
 
-## 🗺 ساختار ریپازیتوری
+## Repository Structure
 
 ```
 llmops-mlflow/
-├── 01-mlflow-basics/          # پایه MLflow — بدون LLM
+├── 01-mlflow-basics/          # MLflow fundamentals — no LLM required
 │   ├── 01_first_experiment.py
 │   ├── 02_compare_runs.py
 │   └── README.md
@@ -44,30 +45,30 @@ llmops-mlflow/
 │   ├── 02_fine_tune_track.py
 │   └── README.md
 │
-├── 05-prompt-management/      # Prompt Versioning
+├── 05-prompt-management/      # Prompt versioning
 │   ├── prompts/
 │   ├── 01_version_prompts.py
 │   └── README.md
 │
-├── 06-evaluation/             # LLM Evaluation با MLflow
+├── 06-evaluation/             # LLM evaluation with MLflow
 │   ├── 01_mlflow_evaluate.py
 │   ├── 02_custom_metrics.py
 │   └── README.md
 │
-├── 07-production/             # Serve و Deploy
+├── 07-production/             # Serving and deployment
 │   ├── 01_register_model.py
 │   ├── 02_serve_llm.py
 │   └── README.md
 │
 ├── requirements.txt
-└── README.md                  # همین فایل
+└── README.md
 ```
 
 ---
 
-## ⚡ شروع سریع
+## Quick Start
 
-### ۱. نصب dependencies
+### 1. Install dependencies
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/llmops-mlflow.git
@@ -75,21 +76,21 @@ cd llmops-mlflow
 pip install -r requirements.txt
 ```
 
-### ۲. تنظیم API Key
+### 2. Set up API keys
 
 ```bash
 cp .env.example .env
-# فایل .env رو باز کن و کلیدهات رو بنویس
+# Open .env and fill in your keys
 ```
 
-### ۳. اجرای MLflow UI
+### 3. Start the MLflow UI
 
 ```bash
 mlflow ui
-# بعد برو به: http://localhost:5000
+# Then go to: http://localhost:5000
 ```
 
-### ۴. اولین آزمایش
+### 4. Run your first experiment
 
 ```bash
 python 01-mlflow-basics/01_first_experiment.py
@@ -97,20 +98,20 @@ python 01-mlflow-basics/01_first_experiment.py
 
 ---
 
-## 🔑 مفاهیم کلیدی
+## Key Concepts
 
-| مفهوم | توضیح |
-|-------|--------|
-| **Experiment** | یه پروژه یا سوال مشخص (مثلاً: "کدوم prompt بهتره؟") |
-| **Run** | یه بار اجرای آزمایش با پارامترهای مشخص |
-| **Parameters** | ورودی‌های آزمایش (model_name, temperature, prompt) |
-| **Metrics** | نتایج قابل اندازه‌گیری (latency, cost, accuracy) |
-| **Artifacts** | فایل‌های ذخیره‌شده (مدل، prompt، output) |
-| **Model Registry** | سیستم مدیریت نسخه‌های مدل |
+| Concept | Description |
+|---------|-------------|
+| **Experiment** | A logical container for related runs (e.g. "Which prompt performs best?") |
+| **Run** | A single execution with specific parameters |
+| **Parameters** | Inputs to the experiment (model_name, temperature, prompt) |
+| **Metrics** | Measurable outputs (latency, cost, accuracy) |
+| **Artifacts** | Saved files (models, prompts, outputs) |
+| **Model Registry** | Version control system for models |
 
 ---
 
-## 🛠 Stack
+## Stack
 
 - **MLflow** — Experiment tracking, Model Registry, Evaluation
 - **LangChain** — LLM chains, RAG, Agents
@@ -120,14 +121,14 @@ python 01-mlflow-basics/01_first_experiment.py
 
 ---
 
-## 📈 مسیر یادگیری
+## Learning Path
 
 ```
 01-basics → 02-langchain → 03-llamaindex → 04-huggingface
-                                                    ↓
-               07-production ← 06-evaluation ← 05-prompts
+                                                    |
+               07-production <- 06-evaluation <- 05-prompts
 ```
 
 ---
 
-*ساخته‌شده برای یادگیری LLMOps Engineering*
+*Built for learning LLMOps Engineering*
