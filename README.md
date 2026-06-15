@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ### 2. Set up API keys
 
 ```bash
-cp .env.example .env
+cp .env
 # Open .env and fill in your keys
 ```
 
@@ -72,7 +72,7 @@ python 01-mlflow-basics/01_first_experiment.py
 - **LangChain** — LLM chains, RAG, Agents
 - **LlamaIndex** — Document indexing, Query engines
 - **HuggingFace** — Open-source models
-- **OpenAI / Groq** — LLM providers
+- **AvvalAI** — LLM providers
 
 ---
 
