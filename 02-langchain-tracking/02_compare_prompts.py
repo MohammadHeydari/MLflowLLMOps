@@ -1,13 +1,5 @@
-"""
-Lesson 4: Prompt Comparison — the Core of LLMOps
-==================================================
-What we learn:
-  - How to compare multiple prompts against each other
-  - Prompt versioning
-  - Selecting the best prompt based on metrics
-
-This is one of the most important skills for an LLMOps Engineer.
-"""
+# Prompt Comparison — the Core of LLMOps
+# Prompt versioning
 
 import mlflow
 import time
@@ -19,9 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 mlflow.set_experiment("02-prompt-comparison")
 
-# ==========================================
 # Define multiple prompt versions
-# ==========================================
 PROMPT_VERSIONS = {
     "v1-basic": {
         "system": "Answer the question.",
