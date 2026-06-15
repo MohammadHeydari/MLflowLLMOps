@@ -26,8 +26,8 @@ This repository covers the practical learning path for becoming an **LLMOps Engi
 ### 1. Install dependencies
 
 ```bash
-git clone https://github.com/MohammadHeydari/llmops-mlflow.git
-cd mlflowllmps
+git clone https://github.com/MohammadHeydari/MLflowLLMOps
+cd MLflowLLMOps
 pip install -r requirements.txt
 ```
 
