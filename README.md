@@ -79,9 +79,13 @@ python 01-mlflow-basics/01_first_experiment.py
 ## Learning Path
 
 ```
-01-basics → 02-langchain → 03-llamaindex → 04-huggingface
-                                                    |
-               07-production <- 06-evaluation <- 05-prompts
+01-basics
+02-langchain
+03-llamaindex
+04-huggingface
+05-prompts
+06-evaluation
+07-production 
 ```
 
 ---
