@@ -20,58 +20,13 @@ This repository covers the practical learning path for becoming an **LLMOps Engi
 
 ---
 
-## Repository Structure
-
-```
-llmops-mlflow/
-├── 01-mlflow-basics/          # MLflow fundamentals — no LLM required
-│   ├── 01_first_experiment.py
-│   ├── 02_compare_runs.py
-│   └── README.md
-│
-├── 02-langchain-tracking/     # LangChain + MLflow
-│   ├── 01_simple_chain.py
-│   ├── 02_rag_pipeline.py
-│   ├── 03_compare_prompts.py
-│   └── README.md
-│
-├── 03-llamaindex-tracking/    # LlamaIndex + MLflow
-│   ├── 01_index_and_query.py
-│   ├── 02_track_retrieval.py
-│   └── README.md
-│
-├── 04-huggingface-tracking/   # HuggingFace + MLflow
-│   ├── 01_log_hf_model.py
-│   ├── 02_fine_tune_track.py
-│   └── README.md
-│
-├── 05-prompt-management/      # Prompt versioning
-│   ├── prompts/
-│   ├── 01_version_prompts.py
-│   └── README.md
-│
-├── 06-evaluation/             # LLM evaluation with MLflow
-│   ├── 01_mlflow_evaluate.py
-│   ├── 02_custom_metrics.py
-│   └── README.md
-│
-├── 07-production/             # Serving and deployment
-│   ├── 01_register_model.py
-│   ├── 02_serve_llm.py
-│   └── README.md
-│
-├── requirements.txt
-└── README.md
-```
-
----
 
 ## Quick Start
 
 ### 1. Install dependencies
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/llmops-mlflow.git
+git clone https://github.com/MohammadHeydari/llmops-mlflow.git
 cd llmops-mlflow
 pip install -r requirements.txt
 ```
